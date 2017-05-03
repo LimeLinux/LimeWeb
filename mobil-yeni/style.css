@@ -1,0 +1,383 @@
+
+ /* Reset */
+ *{margin:0px; padding:0px; font-family:sans serif}
+ body{background:#eee}
+ ul,li{list-style:none}
+ a{text-decoration:none;}
+.clear{clear:both}
+
+
+/* 960px den büyük ekranlar için */
+
+@media only screen and (min-width: 960px){ 
+	/* Header Bölümü */
+	header{width:94%; height:80px; padding:0 3%; background:#26292B;}
+	#logo{float:left;  }
+	#logo img{height:50px; margin-top:15px}
+	nav{float:right;}
+	nav ul li{float:left;}
+	nav ul li a{display:block; line-height:80px; padding:0px 6px; font-size:16px; color:#eee;}
+	nav ul li a:hover{color:#FF5722;}
+	header span a{display:none;}
+
+	/* Ana Sayfa 1. Bant */
+	#bant-1{width:100%; background:url('image/banner.png'); height:400px;}
+	.bant-1{width:33%; margin:0px auto; padding:60px 0px; text-align:center; }
+	.bant-1 span{font-size:22px; line-height:34px; color:#444; }
+	.bant-1 a{background:#71C837; display:inline; padding:10px 50px; color:#fff; border-radius:10px; font-weight:bold; font-size:18px;}
+	.bant-1 a:hover{color:#333}
+	.bant-1 img{width:200px; margin-bottom:20px;}
+	
+	/* Ana Sayfa 2. Bant */
+	#bant-2{width:94%; padding: 20px 3%; height:380px; background:#26292B;}
+	.bant2left{width:40%; float:left;}
+	.bant2left h2{color:#FF5722; font-size:28px;  margin-bottom:20px;}
+	.bant2left span{color:#eee; font-size:19px; line-height:30px; }
+	.bant2left span a{display:block; background:#FF5722; color:#eee; width:130px; padding:6px 20px; margin-top:30px; border-radius:10px;}
+	.bant2right{float:right; width:55%;  }
+	.bant2right img{width:96%; }
+	
+	/* Ana Sayfa 3. Bant  */
+	#bant-3{width:94%;  background:#999; height:auto;  overflow:hidden; padding:30px 3%;}
+	.bant3{width:46%;  float:left; margin-right:2%;}
+	.bant3 h2{font-size:27px; padding-bottom:5px;}
+	.bant3 span{line-height:28px; font-size:18px; color:#222}
+	
+	/* Ana Sayfa 3. Bant  */
+	#bant-4{width:94%; padding: 0 3%; background:#fff; height: auto; background:#FAFAFA}	
+	#bant-4 img{width:29%; padding:3% 2% 3% 2%; opacity:0.5}
+	#bant-4 img:hover{opacity:1; transition:.5s}
+	
+	/* Footer */
+	footer{width:94%; background:#26292B; height:auto; padding:2% 3%; color:#eee; }
+	footer a{color:#eee; margin:0 5px;}
+	footer a:hover{color:#FF5722; transition:.5s}
+	
+	/* Hakkýmýzda Sayfasý */
+	#hakkimizda{width:80%; padding:60px 5%; margin:50px auto; height:auto; background:#fff; border-radius:5px; text-align:center}
+	#hakkimizda img{width:25%;}
+	#hakkimizda h2{font-size:30px; color:#FF5722; font-weight:bold; padding-bottom:20px}
+	#hakkimizda p{font-size:20px; color:#333; line-height:26px; text-align:left}
+	#hakkimizda a{color:#71C837; font-size:20px;}
+	#hakkimizda a:hover{border-bottom:1px solid #71C837}
+	
+	/* Ekibimiz Sayfasý */
+	#ekibimiz{width:80%; background:#fff; padding:60px 5%; margin:50px auto; border-radius:5px; height:auto; overflow:hidden; text-align:center;}
+	.image{width:18%; margin-right:15px; text-align:center; float:left; font-size:20px; color:#444; margin-bottom:30px;} 
+	.image img{width:70%; height:80%; border-radius:100px; }
+	.tesekkur{width:100%; clear:both; text-align:left; color:#444; font-size:18px;}
+	.tesekkur h2{padding-bottom:10px;}
+	table{width:50%; margin:0 auto; margin-top:40px;}
+	table tr,td{text-align:left; padding-bottom:10px;}
+	table img{width:50px; }
+	table a{color:#FF5722; font-size:21px; }
+	table a:hover{border-bottom:1px solid #FF5722}
+	
+	/* Ýndir Sayfasý */
+	#indir{width:80%; background:#fff; padding:0px 5%; margin:50px auto; padding-bottom:150px; padding-top:50px }
+	#indir p{ font-size:26px; color:#444; padding-bottom:7px; padding-top:30px;}
+	#indir a{font-size:20px; color:#FF5722}
+	
+	/* Destek Sayfasý */
+	#destek{width:80%; background:#fff; padding:50px 5%; margin:50px auto; }
+	#destek h2{color:#FF5722; padding-bottom:15px}
+	#destek p{font-size:18px; color:#666; line-height:25px}
+	#destek form{margin-top:60px; margin-bottom:30px}
+	
+	/* Ýletiþim Sayfasý*/
+	.iletisim{width:80%; background:#fff; padding:50px 5%; margin:50px auto;}
+	.iletisim table{width:60%;}
+	.iletisim input{width:70%; padding:5px; font-family:arial; font-size:14px;}
+	.iletisim textarea{width:70%; height:150px; padding:5px; resize:none; font-family:arial; font-size:14px;}
+	.iletisim input[type="reset"]{width:25%;}
+	.iletisim input[type="submit"]{width:25%;}
+	
+	
+}
+
+
+
+/* 960px  800px Aralýðý Ýçin */
+
+@media only screen and (min-width: 801px) and (max-width: 959px)  { 
+	/* Header Bölümü */
+	header{width:94%; height:80px; padding:0 3%; background:#26292B;}
+	#logo{float:left;  }
+	#logo img{height:40px; margin-top:20px}
+	nav{float:right; }
+	nav ul li{float:left;}
+	nav ul li a{display:block; background:#26292B; font-size:15px; padding:30px 4px; color:#eee; font-size:16px; }
+	nav ul li a:hover{color:#FF5722;}
+	header span a{display:none}
+	
+	/* Ana Sayfa 1. Bant */
+	#bant-1{width:94%; padding:0 3%; background:url('image/banner.png'); height:400px;}
+	.bant-1{width:50%; margin:0px auto; padding:60px 0px; text-align:center; }
+	.bant-1 span{font-size:22px; line-height:34px; color:#444; }
+	.bant-1 a{background:#71C837; display:inline; padding:10px 50px; color:#fff;	border-radius:10px; font-weight:bold; font-size:18px;}
+	.bant-1 a:hover{color:#333}
+	.bant-1 img{width:200px; margin-bottom:20px;}
+	
+	/* Ana Sayfa 2. Bant */
+	#bant-2{width:94%; padding: 20px 3%; height:450px; background:#26292B;}
+	.bant2left{width:40%; float:left;}
+	.bant2left h2{color:#FF5722; font-size:28px;  margin-bottom:20px;}
+	.bant2left span{color:#eee;  font-size:19px; line-height:30px;}
+	.bant2left span a{display:block; background:#FF5722; color:#eee; width:130px; padding:6px 20px; margin-top:30px; border-radius:10px;}
+	.bant2right{float:right; width:50%; margin-top:9% }
+	.bant2right img{width:96%; }
+	
+	
+	/* Ana Sayfa 3. Bant  */
+	#bant-3{width:94%;  background:#999; height:auto;  overflow:hidden; padding:30px 3%;}
+	.bant3{width:46%;  float:left; margin-right:2%;}
+	.bant3 h2{font-size:27px; padding-bottom:5px;}
+	.bant3 span{line-height:28px; font-size:18px; color:#222}
+	
+	/* Ana Sayfa 3. Bant  */
+	#bant-4{width:94%; padding: 0 3%; background:#fff; height: auto; background:#FAFAFA}	
+	#bant-4 img{width:29%; padding:3% 2% 3% 2%; opacity:0.5}
+	#bant-4 img:hover{opacity:1; transition:.5s}
+	
+	/* Footer */
+	footer{width:94%; background:#26292B; height:auto; padding:2% 3%; color:#eee; }
+	footer a{color:#eee; margin:0 5px;}
+	footer a:hover{color:#FF5722; transition:.5s}
+	
+	/* Hakkýmýzda Sayfasý */
+	#hakkimizda{width:80%; padding:60px 5%; margin:50px auto; height:auto; background:#fff; border-radius:5px; text-align:center}
+	#hakkimizda img{width:25%;}
+	#hakkimizda h2{font-size:30px; color:#FF5722; font-weight:bold; padding-bottom:20px}
+	#hakkimizda p{font-size:20px; color:#333; line-height:26px; text-align:left}
+	#hakkimizda a{color:#71C837; font-size:20px;}
+	#hakkimizda a:hover{border-bottom:1px solid #71C837}
+	
+	
+	
+	/* Ekibimiz Sayfasý */
+	#ekibimiz{width:80%; background:#fff; padding:60px 5%; margin:50px auto; border-radius:5px; height:auto; overflow:hidden; text-align:center;}
+	.image{width:22%; margin-right:15px; text-align:center; float:left; font-size:20px; color:#444; margin-bottom:30px;} 
+	.image img{width:70%; height:80%; border-radius:100px; }
+	.tesekkur{width:100%; clear:both; text-align:left; color:#444; font-size:18px;}
+	.tesekkur h2{padding-bottom:10px;}
+	table{width:50%; margin:0 auto; margin-top:40px;}
+	table tr,td{text-align:left; padding-bottom:10px;}
+	table img{width:50px; }
+	table a{color:#FF5722; font-size:21px;}
+	table a:hover{border-bottom:1px solid #FF5722}
+	
+	/* Ýndir Sayfasý */
+	#indir{width:80%; background:#fff; padding:0px 5%; margin:50px auto; padding-bottom:150px; padding-top:50px }
+	#indir p{ font-size:26px; color:#444; padding-bottom:7px; padding-top:30px;}
+	#indir a{font-size:20px; color:#FF5722}
+	
+	/* Destek Sayfasý */
+	#destek{width:80%; background:#fff; padding:50px 5%; margin:50px auto; }
+	#destek h2{color:#FF5722; padding-bottom:15px}
+	#destek p{font-size:18px; color:#666; line-height:25px}
+	#destek form{margin-top:60px; margin-bottom:30px}
+	
+	
+	/* Ýletiþim Sayfasý*/
+	.iletisim{width:80%; background:#fff; padding:50px 5%; margin:50px auto;}
+	.iletisim table{width:70%;}
+	.iletisim input{width:90%; padding:5px; font-family:arial; font-size:14px;}
+	.iletisim textarea{width:90%; height:150px; padding:5px; resize:none; font-family:arial; font-size:14px;}
+	.iletisim input[type="reset"]{width:30%;}
+	.iletisim input[type="submit"]{width:30%;}
+	
+	
+}
+
+
+/* 800px  480px Aralýðý Ýçin */
+
+@media only screen and (min-width: 481px) and (max-width: 800px) {
+	header{width:94%; height:80px; padding:0 3%; background:#26292B;}
+	#logo{float:right;  }
+	#logo img{height:40px; margin-top:20px}
+	nav{float:left; display:none;  width:60%; position:absolute; top:80px;}
+	nav ul li{}
+	nav ul li a{display:block; background:#26292B; padding:10px 10px;  color:#eee; font-size:24px; border-bottom:1px solid #999}
+	header span a{color:#eee; float:left; line-height:80px; padding:0 3%; font-size:24px; font-weight:bold; }
+	
+	/* Ana Sayfa 1. Bant */
+	#bant-1{width:94%; padding:0 3%; background:url('image/banner.png'); height:400px;}
+	.bant-1{width:60%; margin:0px auto; padding:30px 0px; text-align:center; }
+	.bant-1 span{font-size:22px; line-height:34px; color:#444; }
+	.bant-1 a{background:#71C837; display:inline; padding:10px 50px; color:#fff;	border-radius:10px; font-weight:bold; font-size:18px;}
+	.bant-1 a:hover{color:#333}
+	.bant-1 img{width:200px; margin-bottom:15px;}
+	
+	/* Ana Sayfa 2. Bant */
+	#bant-2{width:90%; padding: 20px 5%; height:auto; background:#26292B;}
+	.bant2left{width:100%; }
+	.bant2left h2{color:#FF5722; font-size:28px;  margin-bottom:20px;}
+	.bant2left span{color:#eee; font-size:19px; line-height:30px;}
+	.bant2left span a{display:block; background:#FF5722; color:#eee; width:130px; padding:7px 50px; margin-top:30px; border-radius:10px;}
+	.bant2right{ width:100%; padding-top:50px }
+	.bant2right img{width:100%;}
+	
+	/* Ana Sayfa 3. Bant  */
+	#bant-3{width:94%;  background:#999; height:auto;  overflow:hidden; padding:50px 3%;}
+	.bant3{width:96%;  margin-bottom:30px; margin-top:30px;  border:1px solid #FF5722; padding:2%}
+	.bant3 h2{font-size:27px; padding-bottom:5px;}
+	.bant3 span{line-height:28px; font-size:18px; color:#222}
+	
+	/* Ana Sayfa 3. Bant  */
+	#bant-4{width:94%; padding: 0 3%; background:#fff; height: auto; background:#FAFAFA}	
+	#bant-4 img{width:45%; padding:3% 2% 3% 2%; opacity:0.5}
+	#bant-4 img:hover{opacity:1; transition:.5s}
+	
+	/* Footer */
+	footer{width:94%; background:#26292B; height:auto; padding:2% 3%; color:#eee; }
+	footer a{color:#eee; margin:0 5px;}
+	footer a:hover{color:#FF5722; transition:.5s}
+	
+	/* Hakkýmýzda Sayfasý */
+	#hakkimizda{width:80%; padding:60px 5%; margin:50px auto; height:auto; background:#fff; border-radius:5px; text-align:center}
+	#hakkimizda img{width:25%;}
+	#hakkimizda h2{font-size:30px; color:#FF5722; font-weight:bold; padding-bottom:20px}
+	#hakkimizda p{font-size:20px; color:#333; line-height:26px; text-align:left}
+	#hakkimizda a{color:#71C837; font-size:20px;}
+	#hakkimizda a:hover{border-bottom:1px solid #71C837}
+	
+	
+	
+	/* Ekibimiz Sayfasý */
+	#ekibimiz{width:80%; background:#fff; padding:60px 5%; margin:50px auto; border-radius:5px; height:auto; overflow:hidden; text-align:center;}
+	.image{width:31%; margin-right:5px; text-align:center; float:left; font-size:18px; color:#444; margin-bottom:30px;} 
+	.image img{width:70%; height:80%; border-radius:100px; }
+	.tesekkur{width:100%; clear:both; text-align:left; color:#444; font-size:18px;}
+	.tesekkur h2{padding-bottom:10px;}
+	table{width:85%; margin:0 auto; margin-top:40px;}
+	table tr,td{text-align:left; padding-bottom:10px; padding-right:10px; }
+	table img{width:50px; }
+	table a{color:#FF5722; font-size:19px;}
+	table a:hover{border-bottom:1px solid #FF5722}
+	
+	
+	/* Ýndir Sayfasý */
+	#indir{width:80%; background:#fff; padding:0px 5%; margin:50px auto; padding-bottom:150px; padding-top:50px }
+	#indir p{ font-size:22px; color:#444; padding-bottom:7px; padding-top:30px;}
+	#indir a{font-size:18px; color:#FF5722}
+	
+	
+	/* Destek Sayfasý */
+	#destek{width:80%; background:#fff; padding:50px 5%; margin:50px auto; }
+	#destek h2{color:#FF5722; padding-bottom:15px}
+	#destek p{font-size:18px; color:#666; line-height:25px}
+	#destek form{margin-top:60px; margin-bottom:30px}
+	
+	
+	/* Ýletiþim Sayfasý*/
+	.iletisim{width:80%; background:#fff; padding:50px 5%; margin:50px auto;}
+	.iletisim table{width:80%;}
+	.iletisim input{width:90%; padding:5px; font-family:arial; font-size:14px;}
+	.iletisim textarea{width:90%; height:150px; padding:5px; resize:none; font-family:arial; font-size:14px;}
+	.iletisim input[type="reset"]{width:35%;}
+	.iletisim input[type="submit"]{width:35%;}
+	
+	
+}
+
+
+/* 480px den Küçük Çözünürlükler için */
+@media only screen and (max-width: 480px){
+	
+	header{width:94%; height:80px; padding:0 3%; background:#26292B;}
+	#logo{float:right;  }
+	#logo img{height:30px; margin-top:25px}
+	nav{float:left; display:none;  width:60%; position:absolute; top:80px;}
+	nav ul li{}
+	nav ul li a{display:block; background:#26292B; padding:10px 10px; color:#eee; font-size:24px; border-bottom:1px solid #999}
+	header span a{color:#eee; float:left; padding:0 3%; line-height:80px; font-size:24px; font-weight:bold;}
+	
+	/* Ana Sayfa 1. Bant */
+	#bant-1{width:94%; padding:0 3%; background:url('image/banner.png'); height:400px;}
+	.bant-1{width:94%; margin:0px auto; padding:20px 0px; text-align:center; }
+	.bant-1 span{font-size:22px; line-height:34px; color:#444; }
+	.bant-1 a{background:#71C837; display:inline; padding:10px 50px; color:#fff;	border-radius:10px; font-weight:bold; font-size:18px;}
+	.bant-1 a:hover{color:#333}
+	.bant-1 img{width:200px; margin-bottom:10px;}
+	
+	/* Ana Sayfa 2. Bant */
+	#bant-2{width:90%; padding: 20px 5%; height:auto; background:#26292B;}
+	.bant2left{width:100%; }
+	.bant2left h2{color:#FF5722; font-size:28px;  margin-bottom:20px;}
+	.bant2left span{color:#eee; font-size:19px; line-height:30px;}
+	.bant2left span a{display:block; background:#FF5722; color:#eee; width:130px; padding:7px 30px; margin-top:30px; border-radius:10px;}
+	.bant2right{ width:100%; padding-top:50px }
+	.bant2right img{width:100%;}
+	
+	/* Ana Sayfa 3. Bant  */
+	#bant-3{width:94%;  background:#999; height:auto;  overflow:hidden; padding:50px 3%;}
+	.bant3{width:96%;  margin-bottom:30px; margin-top:30px;  border:1px solid #FF5722; padding:2%}
+	.bant3 h2{font-size:27px; padding-bottom:5px;}
+	.bant3 span{line-height:28px; font-size:18px; color:#222}
+	
+	/* Ana Sayfa 3. Bant  */
+	#bant-4{width:94%; padding: 0 3%; background:#fff; height: auto; background:#FAFAFA}	
+	#bant-4 img{width:90%; padding:4% 5% 4% 5%; opacity:0.5}
+	#bant-4 img:hover{opacity:1; transition:.5s}
+	
+	/* Footer */
+	footer{width:94%; background:#26292B; height:auto; padding:7% 3%; color:#eee; clear:both  }
+	footer font{display:block; margin-bottom:10px}
+	footer a{color:#eee; display:block; margin-top:1px; width:30%; }
+	footer a:hover{color:#FF5722; transition:.5s}
+	
+	
+	/* Hakkýmýzda Sayfasý */
+	#hakkimizda{width:80%; padding:60px 5%; margin:50px auto; height:auto; background:#fff; border-radius:5px; text-align:center}
+	#hakkimizda img{width:25%;}
+	#hakkimizda h2{font-size:30px; color:#FF5722; font-weight:bold; padding-bottom:20px}
+	#hakkimizda p{font-size:20px; color:#333; line-height:26px; text-align:left}
+	#hakkimizda a{color:#71C837; font-size:20px;}
+	#hakkimizda a:hover{border-bottom:1px solid #71C837}
+	
+
+		/* Ekibimiz Sayfasý */
+	#ekibimiz{width:80%; background:#fff; padding:60px 5%; margin:50px auto; border-radius:5px; height:auto; overflow:hidden; text-align:center;}
+	.image{width:50%; text-align:center; float:left; font-size:16px; color:#444; margin-bottom:30px;} 
+	.image img{width:70%; height:80%; border-radius:100px; }
+	.tesekkur{width:100%; clear:both; text-align:left; color:#444; font-size:18px;}
+	.tesekkur h2{padding-bottom:10px;}
+	table{width:90%; margin:0 auto; margin-top:40px; }
+	table tr,td{text-align:left; padding-right:10px; padding-bottom:10px; text-align:left; }
+	table img{width:50px; }
+	table a{color:#FF5722; font-size:18px;}
+	table a:hover{border-bottom:1px solid #FF5722}
+	
+	
+	/* Ýndir Sayfasý */
+	#indir{width:80%; background:#fff; padding:0px 5%; margin:50px auto; padding-bottom:150px; padding-top:50px }
+	#indir p{ font-size:22px; color:#444; padding-bottom:7px; padding-top:30px;}
+	#indir a{font-size:18px; color:#FF5722}
+	
+	
+	/* Destek Sayfasý */
+	#destek{width:80%; background:#fff; padding:50px 5%; margin:50px auto; }
+	#destek h2{color:#FF5722; padding-bottom:15px}
+	#destek p{font-size:18px; color:#666; line-height:25px}
+	#destek form{margin-top:60px; margin-bottom:30px}
+	
+	
+	/* Ýletiþim Sayfasý*/
+	.iletisim{width:80%; background:#fff; padding:50px 5%; margin:50px auto;}
+	.iletisim table{width:100%;}
+	.iletisim input{width:100%; padding:5px; font-family:arial; font-size:14px;}
+	.iletisim textarea{width:100%; height:130px; padding:5px; resize:none; font-family:arial; font-size:14px;}
+	.iletisim input[type="reset"]{width:55%;}
+	.iletisim input[type="submit"]{width:55%; margin-top:5px;}
+	
+}
+
+
+@media (min-width:800px){
+	nav{display:block!important}
+}
+
+@media (min-width:900px){
+	nav{display:none}
+}
